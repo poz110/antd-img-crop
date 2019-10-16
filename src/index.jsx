@@ -150,6 +150,9 @@ class ImgCrop extends Component {
   };
   // 响应裁切变化
   onCropChange = (crop) => {
+    const { onCropchange } = this.props
+    console.log(crop)
+    onCropchange && onCropchange(crop)
     this.setState({ crop });
   };
 
