@@ -1,6 +1,6 @@
 {
-  "name": "antd-img-crop",
-  "version": "2.1.2",
+  "name": "antd-img-clip",
+  "version": "1.0.1",
   "description": "An image cropper for Ant Design Upload",
   "keywords": [
     "react",

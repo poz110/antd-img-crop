@@ -228,7 +228,7 @@ class ImgCrop extends Component {
   };
 
   render() {
-    const { modalTitle, modalWidth, resize, resizeAndDrag } = this.props;
+    const { modalTitle, modalWidth, resize, resizeAndDrag, showPixel } = this.props;
     const { modalVisible, src, crop } = this.state;
 
     return (
@@ -257,6 +257,11 @@ class ImgCrop extends Component {
                   keepSelection
                 />
               )}
+              {
+                showPixel && <div style={{ margin: '10px auto', textAlign: 'center'}}>
+                  当前尺寸：{`${crop.height} * ${crop.width}`}
+                </div>
+              }
             </Modal>
           </>
         )}
